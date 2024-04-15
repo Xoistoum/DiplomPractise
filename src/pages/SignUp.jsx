@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../services/firebase";
+import { auth } from "../src/firebase";
 import SetImage from "./Images";
 import "./signIn.css";
 
@@ -14,7 +14,7 @@ const SignUp = () => {
     function register(e) {
         e.preventDefault()
         if (copyPassword !== password) {
-            setError("Passwords didn't match")
+            setError("Пароли должны совпадать!")
             return
         }
         createUserWithEmailAndPassword(auth, email, password).then((user) => {
@@ -34,14 +34,14 @@ const SignUp = () => {
                 <h2>Create an account</h2>
                 <div className="inputBox">
                     <input
-                        placeholder={"Please enter your email"}
+                        placeholder={"Введите email"}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type={"email"}/>
                 </div>
                 <div className="inputBox">
                     <input
-                        placeholder={"Please enter your password"}
+                        placeholder={"Введите пароль"}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         type={"password"}/>
@@ -49,7 +49,7 @@ const SignUp = () => {
 
                 <div className="inputBox">
                     <input
-                        placeholder={"Please enter your password again"}
+                        placeholder={"Повторите пароль"}
                         value={copyPassword}
                         onChange={(e) => setCopyPassword(e.target.value)}
                         type={"password"}/>

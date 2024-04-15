@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Loading from "../components/Loader";
 import Map from "../components/Map";
 import Panel from "../components/Panel";
-import { auth } from "../services/firebase";
+import { auth } from "../src/firebase";
 import SetImage from "./Images";
 
 const AuthHandler = () => {

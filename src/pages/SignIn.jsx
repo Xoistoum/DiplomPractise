@@ -1,9 +1,9 @@
-import "./signIn.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../src/firebase";
 import SetImage from "./Images";
+import "./signIn.css";
 
 const SignIn = () => {
     const [email, setEmail] = useState("");
@@ -21,7 +21,7 @@ const SignIn = () => {
             })
             .catch((error) => {
                 console.log(error);
-                setError("Sorry, couldn't find your account");
+                setError("Аккаунт не найден");
             });
     };
 
@@ -32,7 +32,7 @@ const SignIn = () => {
                 <h2>Log in</h2>
                 <div className="inputBox">
                     <input
-                        placeholder={"Please enter your email"}
+                        placeholder={"Введите email"}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type={"email"}
@@ -40,7 +40,7 @@ const SignIn = () => {
                 </div>
                 <div className="inputBox">
                     <input
-                        placeholder={"Please enter your password"}
+                        placeholder={"Введите пароль"}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         type={"password"}
@@ -53,7 +53,7 @@ const SignIn = () => {
                 </div>
                 <div className="group">
                     <p>
-                        Don't have an account? <Link to="/signup">Sign Up</Link>
+                        Еще нет аккаунта? Зарегестрируйтесь <Link to="/signup">Sign Up</Link>
                     </p>
                 </div>
             </div>
