@@ -1,0 +1,50 @@
+.panel {
+    width: 70px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #ccc;
+    z-index: 2;
+}
+
+.up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button,
+.button1 {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+}
+
+.button1 {
+    border-radius: 50%;
+}
+
+.button img,
+.button1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
