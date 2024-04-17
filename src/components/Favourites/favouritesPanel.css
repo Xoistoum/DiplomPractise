@@ -1,0 +1,25 @@
+.favourites-panel {
+    width: 270px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.favourites-panel h1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: rgb(24, 115, 164);
+}

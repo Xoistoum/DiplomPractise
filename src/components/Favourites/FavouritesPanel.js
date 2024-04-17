@@ -4,7 +4,7 @@ import './favouritesPanel.css';
 const FavouritesPanel = () => {
     return (
         <div className="favourites-panel">
-            Избранное:
+            <h1>Избранное</h1>
         </div>
     );
 }

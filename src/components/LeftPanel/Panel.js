@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import AuthDetails from '../Auth/AuthDetails';
-import FavouritesPanel from '../FavouritePanel/FavouritesPanel';
+import AuthDetails from '../Authorization/AuthDetails';
+import FavouritesPanel from '../Favourites/FavouritesPanel';
 import SearchPanel from '../SearchPanel/SearchPanel';
 import './panel.css';
 function Panel() {
