@@ -1,4 +1,4 @@
-.search-bar {
+.search-panel {
     width: 270px;
     height: 100%;
     background-color: #fff;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.search-bar input {
+.search-panel input {
     width: 90%;
     height: 25px;
     padding: 5px;

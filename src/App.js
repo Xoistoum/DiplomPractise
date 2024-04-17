@@ -1,9 +1,8 @@
 import React, { StrictMode } from "react";
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-
-import AuthHandler from "./pages/AuthHandler";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import AuthHandler from "./components/Auth/AuthHandler";
+import SignIn from "./components/Auth/SignIn";
+import SignUp from "./components/Auth/SignUp";
 
 const App = () => {
     return (

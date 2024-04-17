@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import Loading from "../components/Loader";
-import Map from "../components/Map";
-import Panel from "../components/Panel";
-import { auth } from "../src/firebase";
-import SetImage from "./Images";
+import { auth } from "../../firebase";
+import Panel from "../LeftPanel/Panel";
+import Loading from "../Loading/Loading";
+import Map from "../Map/Map";
+import SetImage from "./SetImage";
 
 const AuthHandler = () => {
     const [user, setUser] = useState(null);

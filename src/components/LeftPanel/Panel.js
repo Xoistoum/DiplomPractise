@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import FavouritesPanel from "../Favourites";
-import AuthDetails from '../pages/AuthDetails';
-import SearchPanel from './SearchBar';
+import AuthDetails from '../Auth/AuthDetails';
+import FavouritesPanel from '../FavouritePanel/FavouritesPanel';
+import SearchPanel from '../SearchPanel/SearchPanel';
 import './panel.css';
 function Panel() {
     const [isAuthDetailsVisible, setIsAuthDetailsVisible] = useState(false);
@@ -25,11 +25,11 @@ function Panel() {
     return (
         <div className="panel">
             <div className="up">
-                <button className="button" onClick={toggleSearchPanel}><img src={require("../icons/searchbtn.png")} style={{ width: '50px', height: '50px' }} alt="Search"/></button>
-                <button className="button" onClick={toggleFavouritesPanel}><img src={require("../icons/favourites.png")} alt="Favorite"/></button>
+                <button className="button" onClick={toggleSearchPanel}><img src={require("../../icons/searchbtn.png")} style={{ width: '50px', height: '50px' }} alt="Search"/></button>
+                <button className="button" onClick={toggleFavouritesPanel}><img src={require("../../icons/favourites.png")} alt="Favorite"/></button>
             </div>
             <div className="down">
-                <button className="button1" onClick={toggleAuthDetails}><img src={require("../icons/user.png")} alt="User"/></button>
+                <button className="button1" onClick={toggleAuthDetails}><img src={require("../../icons/user.png")} alt="User"/></button>
                 {isAuthDetailsVisible && <AuthDetails />}
             </div>
             {isSearchPanelVisible && <SearchPanel style={{ zIndex: 101 }} />}

@@ -1,8 +1,8 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../src/firebase";
-import SetImage from "./Images";
+import { auth } from "../../firebase";
+import SetImage from "./SetImage";
 import "./signIn.css";
 
 const SignIn = () => {
@@ -29,7 +29,7 @@ const SignIn = () => {
         <section>
             <SetImage/>
             <div className="login">
-                <h2>Log in</h2>
+                <h2>Войти</h2>
                 <div className="inputBox">
                     <input
                         placeholder={"Введите email"}
@@ -48,7 +48,7 @@ const SignIn = () => {
                 </div>
 
                 <div className="inputBox">
-                    <button id={"btn"} onClick={logIn}>Login</button>
+                    <button id={"btn"} onClick={logIn}>Логин</button>
                     {error ? <p style={{ color: "red" }}>{error}</p> : ""}
                 </div>
                 <div className="group">

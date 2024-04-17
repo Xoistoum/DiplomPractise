@@ -1,14 +1,15 @@
 import React from 'react';
-import "./Images.css";
+import "./setImages.css";
 
-import culture from "../icons/culture.png";
-import entertainment from "../icons/entertainment.png";
-import food from "../icons/food.png";
-import gasStation from "../icons/gasStation.png";
-import nature from "../icons/nature.png";
-import other from "../icons/other.png";
-import shop from "../icons/shop.png";
-import sport from "../icons/sport.png";
+import bg from "../../icons/bg6.PNG";
+import culture from "../../icons/culture.png";
+import entertainment from "../../icons/entertainment.png";
+import food from "../../icons/food.png";
+import gasStation from "../../icons/gasStation.png";
+import nature from "../../icons/nature.png";
+import other from "../../icons/other.png";
+import shop from "../../icons/shop.png";
+import sport from "../../icons/sport.png";
 
 
 const images = [
@@ -33,7 +34,7 @@ const SetImage = () => {
                 ))}
             </div>
             <div>
-            <Map />
+                <img src={bg} className="bg" alt="" />
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ body {
     padding: 0;
   }
   
-  div {
+  .loader {
     width: 120px;
     height: 120px;
     background: linear-gradient(-45deg, #ED1C24, #FCEE21);

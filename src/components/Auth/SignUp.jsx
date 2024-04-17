@@ -1,8 +1,8 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../src/firebase";
-import SetImage from "./Images";
+import { auth } from "../../firebase";
+import SetImage from "./SetImage";
 import "./signIn.css";
 
 const SignUp = () => {
@@ -31,7 +31,7 @@ const SignUp = () => {
             <SetImage/>
             <div className="login">
             <form onSubmit={register}>
-                <h2>Create an account</h2>
+                <h2>Создать аккаунт</h2>
                 <div className="inputBox">
                     <input
                         placeholder={"Введите email"}
@@ -55,14 +55,14 @@ const SignUp = () => {
                         type={"password"}/>
                 </div>
                 <div className="inputBox">
-                    <button>Create</button>
+                    <button>Создать</button>
                     {error ? <p style={{color:"red"}}>{error}</p> : ""}
                 </div>
 
             </form>
             <div className="group">
                 <p>
-                    Already have an account? <Link to="/signin">Sign In</Link>
+                    Уже есть аккаунт?? <Link to="/signin">Войти</Link>
                 </p>
             </div>
 

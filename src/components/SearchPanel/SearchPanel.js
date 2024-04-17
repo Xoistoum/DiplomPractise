@@ -1,8 +1,8 @@
 import React from 'react';
-import gasStation from '../icons/gasStation.png';
-import shop from '../icons/shop.png';
-import sport from '../icons/sport.png';
-import './searchBar.css';
+import gasStation from '../../icons/gasStation.png';
+import shop from '../../icons/shop.png';
+import sport from '../../icons/sport.png';
+import './searchPanel.css';
 
 const TAGS = [
     { title: 'gas station', icon: gasStation },
@@ -10,7 +10,7 @@ const TAGS = [
     { title: 'shop', icon: shop },
 ];
 {/* Добавить остальные и подправить стили */}
-const SearchBar = () => {
+const SearchPanel = () => {
     return (
         <div className="search-panel">
             <input type="text" placeholder="Search..." />
@@ -26,4 +26,4 @@ const SearchBar = () => {
     );
 }
 
-export default SearchBar;
+export default SearchPanel;
